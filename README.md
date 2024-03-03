@@ -87,5 +87,16 @@ An output like this will be produced on your terminal.
 </p>
 
 <br/>
-<p>Assumption is made that in the .csv file being uploaded, if a row contains 4 fields they are all valid fields.</p>
+<p>
+  <ul>
+    <li>Assumption is made that in the .csv file being uploaded, if a row contains 4 fields they are all valid fields.</li>
+  </ul></p>
 
+<br/>
+
+<h3>Shortcomings of this project and scope of improvement</h3>
+<ul>
+  <li>The user can currently parse only one csv file at a time.</li>
+  <li>If the user tries to parse multiple files one after the other, the data parsed from the previous files will be lost.</li>
+</ul>
+<p>In future, these features can be added and also validation for the csv file being uploaded can be refined more to make sure only the relevant data is being parsed.</p>
