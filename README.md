@@ -1,5 +1,5 @@
 # summer-break
-<h2>Environment Setup</h2>
+<h2>Environment Setup, Running and Testing the Code</h2>
 <p>To test this code you need bash setup and working. 
 Currently I have tested the code in Ubuntu 23.04 version.
 </p>
@@ -66,3 +66,26 @@ An output like this will be produced on your terminal.
 ![img.png](img.png)
 </li>
 </ul>
+
+
+<h3>Current Approach to the Solution and any Assumptions made</h3>
+
+<p>Current solution has 2 API endpoints setup: 
+  <ul>
+    <li>the '/transactions' endpoint, takes in the .csv file as input as parses it's data and stores it.
+      <ul>
+    <li>The logic behind parsing the CSV file is that is only takes into consideration those lines from the file which has 4 fields available `Date, Type, Amount($), Memo`. Rest all lines will be ignored.</li>
+    <li>The Parsed data from the CSV is stored in a Nested List form.</li>
+        </ul>
+    </li>
+    <li>the '/report' endpoint, gives the user a tally report of gross revenue, total expenses and net revenue (gross revenue - total expenses) in a JSON format. 
+      <ul>
+    <li>The logic behind this is that whenever this endpoint is called we take the csv parsed data which is stored in a nested list, we iterate through the data and perform calculations for gross revenue, total expenses and net revenue.</li>
+              </ul>
+    </li>
+  </ul>
+</p>
+
+<br/>
+<p>Assumption is made that in the .csv file being uploaded, if a row contains 4 fields they are all valid fields.</p>
+
