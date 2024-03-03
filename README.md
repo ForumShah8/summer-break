@@ -6,7 +6,7 @@ Currently I have tested the code in Ubuntu 23.04 version.
 <br/>
 <h4>Steps to install Python and Flask</h4>
 <ul>
-<li>To install Python type in the following commands in your bash terminal:</li>
+<li>To install Python type in the following commands in your terminal:</li>
 
 ``` 
 sudo apt update
@@ -15,7 +15,7 @@ sudo apt update
 sudo apt install python3
 ```
 
-<li>To install Flask, type in the following commands in your bash terminal:</li>
+<li>To install Flask, type in the following commands in your terminal:</li>
 
 ```commandline
 sudo apt install python3-venv
@@ -39,7 +39,7 @@ pip install Flask
 <h4>Steps to run and test the code:</h4>
 <ul>
 <li>Make sure the data.csv file, test.sh file and the solution.py file all in same folder.</li>
-<li>Navigate to the directory containing these files and open the bash terminal there.</li>
+<li>Navigate to the directory containing these files and open the terminal there.</li>
 <li>Start the Flask app by running the following command in terminal:
 
 ```commandline
@@ -57,7 +57,7 @@ python3 solution.py
 source ./test.sh
 ```
 
-this will execute the test.sh file which has the commands to test the endpoints /transactions and /report.
+this will execute the test.sh file which has the commands to test the endpoints "/transactions" and "/report".
 
 An output like this will be produced on your terminal.
 <br/>
