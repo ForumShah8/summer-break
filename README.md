@@ -6,7 +6,7 @@ Currently I have tested the code in Ubuntu 23.04 version.
 <br/>
 <h4>Steps to install Python and Flask</h4>
 <ul>
-<li>If python is not installed type in the following commands in your bash terminal:</li>
+<li>To install Python type in the following commands in your bash terminal:</li>
 
 ``` 
 sudo apt update
