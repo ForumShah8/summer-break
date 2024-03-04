@@ -2,6 +2,7 @@
 ------- Environment Setup, Running and Testing the Code -------
 
 To test this code you need bash setup and working. 
+
 Currently I have tested the code in Ubuntu 23.04 version.
 
 >>>> Steps to install Python and Flask <<<<
@@ -64,14 +65,17 @@ An output like this will be produced on your terminal.
 >>>> Current Approach to the Solution and any Assumptions made: <<<<
 
 Current solution has 2 API endpoints setup: 
+
   The '/transactions' endpoint, takes .csv file as input, parses it's data and stores it.
-    While parsing the data from CSV file, only those lines which have 4 fields available (`Date, Type, Amount($), Memo`) will be parsed and stored. Rest all lines which do not match this     format will be ignored.
+  While parsing the data from CSV file, only those lines which have 4 fields available (`Date, Type, Amount($), Memo`) will be parsed and stored. Rest all lines which do not match this     format will be ignored.
     The Parsed data from the CSV is stored in a Nested List.
+
 
   The '/report' endpoint, gives user a tally report of gross revenue, total expenses and net revenue (gross revenue - total expenses) in a JSON format. 
     Whenever this endpoint is called we take the data stored in Nested List, identify each entry as Income/Expenses, and perform calculations for gross revenue, total expenses and net        revenue.
 
   By default, if the data row contains 4 fields, it is assumed that these are all valid fields following the given format (Date, Type, Amount($), Memo).
+  
 
 >>>> Shortcomings of this project and scope of improvement <<<<
 
